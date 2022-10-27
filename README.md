@@ -8,8 +8,8 @@ Definição do Projeto Desenvolvido no Curso Logica de Programação III - Capge
  Resolver a questão de organização de tarefas de um ou vários projetos.
  
 # Entidades
- -Projeto
- -Tarefa
+ -Projeto;
+ -Tarefa;
  
 # Requisitos
   - Permitir criar o projeto;
