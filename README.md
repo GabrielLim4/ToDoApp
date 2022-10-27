@@ -1,3 +1,5 @@
+Definição do Projeto Desenvolvido no Curso Logica de Programação III - Capgemini
+
 # ToDoApp
  Aplicação para o gerenciamento de projetos e tarefas.
 
