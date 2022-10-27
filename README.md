@@ -9,6 +9,7 @@ Definição do Projeto Desenvolvido no Curso Logica de Programação III - Capge
  
 # Entidades
  -Projeto;
+ 
  -Tarefa;
  
 # Requisitos
