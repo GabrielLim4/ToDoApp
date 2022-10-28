@@ -33,7 +33,7 @@ public class TaskController {
             statement.setString(3, task.getDescription());
             statement.setBoolean(4, task.isIsCompleted());
             statement.setString(5, task.getNotes());
-            statement.setDate(6, new java.sql.Date(task.getDeadline().getTime()));
+            statement.setDate(6, new Date(task.getDeadline().getTime()));
             statement.setDate(7, new Date(task.getCreatedAt().getTime()));
             statement.setDate(8, new Date(task.getUpdatedAt().getTime()));
             statement.setInt(9, task.getId());
