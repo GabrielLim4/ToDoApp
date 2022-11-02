@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
 import java.util.Date;
 
 /**
  *
- * @author gabri_qfbs8gv
+ * @author gabriel
  */
 public class Project {
     
@@ -16,14 +12,20 @@ public class Project {
     private String name;
     private String description;
     private Date createdAt;
-    private Date updateAt;
+    private Date updateAt;    
 
-    public Project(int id, String name, String description, Date createdAt, Date updateAt) {
+    public Project(int id, String name, String description, Date createdAt, 
+            Date updateAt) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.createdAt = createdAt;
         this.updateAt = updateAt;
+    }
+    
+    public Project(){
+        this.createdAt = new Date();
+        this.updateAt = new Date();
     }
 
     public int getId() {
@@ -68,8 +70,9 @@ public class Project {
 
     @Override
     public String toString() {
-        return "Project{" + "id=" + id + ", name=" + name + ", description=" + description + ", createdAt=" + createdAt + ", updateAt=" + updateAt + '}';
+        return "Project{" + "id=" + id + ", name=" + name + ", description=" + 
+                description + ", createdAt=" + createdAt + ", updateAt=" + 
+                updateAt + '}';
     }
-    
     
 }
