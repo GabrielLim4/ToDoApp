@@ -1,4 +1,3 @@
-
 package model;
 
 import java.util.Date;
@@ -12,18 +11,26 @@ public class Task {
     private String description;
     private String notes;
     private boolean isCompleted;
+    private Date deadline;
     private Date createdAt;
-    private Date updateAt;
+    private Date updatedAt;
 
-    public Task(int id, int idProject, String name, String description, String notes, boolean isCompleted, Date createdAt, Date updateAt) {
+    public Task(int id, int idProject, String name, String description, 
+            String notes, boolean isCompleted, Date deadline, Date createdAt, Date updateAt) {
         this.id = id;
         this.idProject = idProject;
         this.name = name;
         this.description = description;
         this.notes = notes;
         this.isCompleted = isCompleted;
+        this.deadline = deadline;
         this.createdAt = createdAt;
-        this.updateAt = updateAt;
+        this.updatedAt = updateAt;
+    }
+    
+    public Task() {
+        this.createdAt = new Date();
+        this.updatedAt = new Date();
     }
 
     public int getId() {
@@ -74,6 +81,15 @@ public class Task {
         this.isCompleted = isCompleted;
     }
 
+    public Date getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
+    }
+    
+
     public Date getCreatedAt() {
         return createdAt;
     }
@@ -82,20 +98,20 @@ public class Task {
         this.createdAt = createdAt;
     }
 
-    public Date getUpdateAt() {
-        return updateAt;
+    public Date getUpdatedAt() {
+        return updatedAt;
     }
 
-    public void setUpdateAt(Date updateAt) {
-        this.updateAt = updateAt;
+    public void setUpdatedAt(Date updateAt) {
+        this.updatedAt = updatedAt;
     }
 
     @Override
     public String toString() {
-        return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", createdAt=" + createdAt + ", updateAt=" + updateAt + '}';
-    }
-
-    
-    
+        return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" 
+                + name + ", description=" + description + ", notes=" + notes 
+                + ", isCompleted=" + isCompleted + ", deadline=" + deadline 
+                + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
+    }       
     
 }
