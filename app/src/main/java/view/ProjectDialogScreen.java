@@ -10,7 +10,7 @@ import model.Project;
 
 /**
  *
- * @author gabri_qfbs8gv
+ * @author gabriel
  */
 public class ProjectDialogScreen extends javax.swing.JDialog {
     

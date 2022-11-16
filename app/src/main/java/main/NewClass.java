@@ -6,7 +6,7 @@ package main;
 
 /**
  *
- * @author gabri_qfbs8gv
+ * @author gabriel
  */
 public class NewClass {
     

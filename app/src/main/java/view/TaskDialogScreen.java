@@ -13,7 +13,7 @@ import model.Task;
 
 /**
  *
- * @author gabri_qfbs8gv
+ * @author gabriel
  */
 public class TaskDialogScreen extends javax.swing.JDialog {
 
